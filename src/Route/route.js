@@ -104,9 +104,9 @@ router.get('/signout', async (req, res) => {
 
         await user.save();
 
-        res.status(200).send('successful')
+        res.status(200).redirect('/')
     } catch (e) {
-        res.status(400).send('unsuccessful')
+        res.status(400).redirect('/')
     }
 })
  
