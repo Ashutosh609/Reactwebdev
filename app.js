@@ -6,13 +6,13 @@ const cookieParser = require('cookie-parser');
 const app = express();
 app.use(cookieParser());
 
-dotenv.config({ path: '../config.env' });  
+dotenv.config({ path: './config.env' });  
 
-require('./db/conn');
+require('./src/db/conn');
 app.use(express.json());
 const port = process.env.PORT || 3000;
 
-app.use(require('./Route/route'));
+app.use(require('./src/Route/route'));
 
 if (process.env.NODE_ENV == "production"){
     app.use(express.static("mernfrontend/build"));
