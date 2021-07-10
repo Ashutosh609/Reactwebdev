@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
-import { Route } from 'react-router-dom';
+import { Route,Redirect,Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Bodyfit from './components/Body/Bodyfit';
@@ -18,6 +18,7 @@ const App = () => {
   return (
     <>
       <Navbar />
+      <Switch>
       <Route exact path='/'>
         <Home />
       </Route>
@@ -42,6 +43,8 @@ const App = () => {
       <Route exact path='/verified'>
         <Verified/>
       </Route>
+      <Redirect to='/'/>
+      </Switch>
     </>
   )
 };
