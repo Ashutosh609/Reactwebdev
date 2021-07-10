@@ -1,0 +1,319 @@
+/* For body */
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(orange, rgb(27, 170, 236), cornsilk, lightpink, rgb(47, 233, 30)) no-repeat center center/cover;
+    background-attachment: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+
+/* style for nav bar  */
+
+.navbar {
+    background-color: none;
+    height: 100px;
+    margin-bottom: 100px;
+}
+
+.nav-item {
+    font-family: 'Oswald', sans-serif;
+    margin:10px;
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.nav-item:hover{
+    background-color: yellow;
+    box-shadow: 0px 0px 9px 9px rgb(236, 84, 211);
+    border-radius: 30px;
+    color: black;
+}
+
+.navbar-background{
+    background-color: cornsilk;
+    border-radius: 30px;
+}
+
+.navbar-brand{
+    background-color: yellow;
+    box-shadow: 0px 0px 9px 9px rgb(250, 77, 100);
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 30px;
+}
+
+#navbarDropdown{
+margin-bottom: 0px;
+}
+
+
+/*style for marquee*/
+
+#msg {
+    width: 100%;
+}
+
+#msg h3 {
+    width: 1000px;
+    text-align: center;
+    animation-name: work;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes work {
+    0% {
+        border-radius: 10px;
+        background-color: blanchedalmond;
+        color: black;
+    }
+    25% {
+        border-radius: 10px;
+        background-color: cornsilk;
+        color: blue;
+    }
+    50% {
+        border-radius: 10px;
+        background-color: greenyellow;
+        color: black;
+    }
+    75% {
+        border-radius: 10px;
+        background-color: blanchedalmond;
+        color: red;
+    }
+    100% {
+        border-radius: 10px;
+        background-color: cornsilk;
+        color: black;
+    }
+}
+
+
+/*Style for section*/
+
+.section {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 100;
+    font-size: larger;
+    width: auto;
+    justify-content: center;
+    padding: 25px;
+}
+
+
+/* Display for second page */
+
+#Yoga,
+#excercise,
+#food,
+#nutrients {
+    display: grid;
+    border: 3px solid red;
+    box-shadow: 0px 0px 9px 9px rgb(238, 177, 11);
+    border-radius: 20px;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+}
+
+#Fitness,
+#Flexibility {
+    display: block;
+    background-image: linear-gradient(to right, rgb(243, 20, 195), darkblue);
+    border: 3px solid red;
+    box-shadow: 0px 0px 9px 9px rgb(238, 177, 11);
+    border-radius: 20px;
+}
+
+.Feedback {
+    display: grid;
+    border: 3px solid red;
+    width: auto;
+    box-shadow: 0px 0px 9px 9px rgb(238, 177, 11);
+    border-radius: 20px;
+    grid-template-columns: 4fr 1fr;
+    grid-column-gap: 20px;
+}
+
+/* Style for login and signup */
+
+   .Login,
+.Signup {
+    display: grid;
+    border: 3px solid red;
+    width: auto;
+    box-shadow: 0px 0px 9px 9px rgb(238, 177, 11);
+    border-radius: 20px;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+} 
+
+form div {
+    text-align: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form div input {
+    margin: 10px 10px;
+    background: none;
+    width: 300px;
+    height: 25px;
+}
+
+form button{
+    margin: 30px auto;
+    box-shadow: 0px 0px 10px 10px green;
+    width: 50px;
+}
+
+#BMI {
+    display: grid;
+    border: 3px solid red;
+    width: 99%;
+    background-image: linear-gradient(to right, yellow, green, orange, pink);
+    box-shadow: 0px 0px 9px 9px rgb(238, 177, 11);
+    border-radius: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+#bmical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border: 5px solid darkgreen;
+    border-radius: 10px;
+    background-color: lightgreen;
+    box-shadow: 0px 0px 10px 10px red;
+}
+
+#bmical div {
+    margin: 10px;
+}
+
+#tablechat {
+    border: 5px solid darkblue;
+    background-color: lightpink;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px magenta;
+    margin: 70px auto;
+}
+
+#tablechat thead {
+    background-color: magenta;
+    margin: 10px;
+}
+
+#tablechat tbody tr:nth-child(even) {
+    background-color: rgb(128, 241, 124);
+}
+
+#tablechat tbody tr:nth-child(odd) {
+    background-color: rgb(107, 213, 245);
+}
+
+.Feedback textarea {
+    margin: 10px 10px;
+    font-family: initial;
+    font-size: larger;
+    text-align: left;
+}
+
+#Yoga a,
+#excercise a,
+#food a,
+#nutrients a {
+    background-color: yellow;
+    border: 3px solid green;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 20px;
+    /* text-shadow: 10px; */
+    text-align: center;
+    margin: 20px auto;
+    width: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 9px 9px rgb(18, 221, 69);
+}
+
+#Fitness div,
+#Flexibility div {
+    font-style: italic;
+    border: 3px solid green;
+    background-image: linear-gradient(orange, white, green);
+    border-radius: 10px;
+    box-shadow: 0px 0px 9px 9px rgb(18, 221, 69);
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+@media only screen and (max-width:991px) {
+    #Yoga,
+    #excercise,
+    #food,
+    #nutrients,
+    .Feedback {
+        grid-template-rows: repeat(10, auto);
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        grid-auto-rows: 2fr;
+        width: auto;
+        margin: 20px auto;
+        width: 300px;
+    }
+    #BMI {
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+}
+
+/* form validation error style  */
+    
+.ferror {
+    color: red;
+    text-align: left;
+}
+
+form div p {
+    display: inline-block;
+    width: 230px;
+}
+
+/* verified */
+
+.verified{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid greenyellow;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 100px;
+    padding: 50px;
+}
+
