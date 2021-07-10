@@ -15,7 +15,11 @@ const port = process.env.PORT || 3000;
 app.use(require('./Route/route'));
 
 if (process.env.NODE_ENV == "production"){
-    app.use(express.static("mernfrontend/build"))
+    app.use(express.static("mernfrontend/build"));
+    const path = require('path');
+    app.get('*',(req,res)=>{
+        res.sendFile(path.resolve(__dirname,'mernfrontend',"build,'index.html"));
+    })
 };
 
 app.listen(port, () => {
