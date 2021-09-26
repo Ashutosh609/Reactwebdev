@@ -35,7 +35,7 @@ const Contact = () => {
 
     return (
         <>
-        <a href='https://ashutosh369.pythonanywhere.com/' target='_' />
+        <a href='https://ashutosh369.pythonanywhere.com/' target='_' rel="noreferrer"/>
         
         </>
     )
