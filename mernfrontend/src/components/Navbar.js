@@ -100,7 +100,7 @@ const Navbar = () => {
                                         id="navbarDropdown"
                                         role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false" style={{ color: 'black' }}>
-                                        Contactss </p> <ul className="dropdown-menu"
+                                        Contact </p> <ul className="dropdown-menu"
                                             aria-labelledby="navbarDropdown" >
                                         <li >
                                     <NavLink className="dropdown-item"
